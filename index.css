@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+     box-sizing: border-box ;
+}
+html{
+    font-size: 62%;
+    scroll-behavior: smooth;
+}
+.body{
+    background-color: black;
+}
+.header{
+    background-color:black ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    z-index: 1000;
+}
+.logo img{
+    height: 6rem;
+
+}
+.header .navbar a{
+    font-size: 1.6rem;
+    color: white;
+    margin:0 1rem ;
+}
+.header .navbar a:hover{
+    color: turquoise;
+    
+}
+.header .icons div{
+    color: white;
+    font-size: 2.6rem;
+}
+.header .icons div:hover{
+color: cyan;
+}
+.header .search-form{
+    position: absolute;
+    right: 10%;
+    top: 110%;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform-origin: top;
+ transform:scaleY(0); 
+ 
+}
+.header .search-form input{
+width: 100%;
+height: 100%;
+font-size: 1.6rem;
+padding: 1rem;
+}
+.header .search-form label{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+.header .search-form label:hover{
+    color: cyan;
+}
+
+.header .search-form.active{
+    transform:scaleY(1);
+}
+.header .cart-items-container{
+    position: absolute;
+    top: 90%;
+    right:0px;
+    height:calc(100vh - 9.5rem);
+    width:35rem;
+    background-color:black;
+    color: white;
+    padding-left: 1rem;
+    transform: scaleY(0);
+    
+}
+.header .cart-items-container .cart-item{
+position: relative;
+margin: 2rem 0;
+display: flex;
+align-items: center;
+gap: 1.5rem;
+}
+.header .cart-items-container .cart-item .fa-times{
+    font-size:2rem ;
+    position: absolute;
+top: 1rem;
+right: 1rem;
+cursor: pointer;
+color:white;
+
+}
+.header .cart-items-container .cart-item img{
+    width: 10rem;
+    height: 7rem;
+}
+.header .cart-items-container .cart-item .content .price{
+    font-size: 2rem;
+    color: white;
+}
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+    
+}
+.header .cart-items-container .cart-item .content h3{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.header .cart-items-container a{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    margin: 7rem;
+    transition: all 1s;
+
+}
+.header .cart-items-container a:hover{
+    letter-spacing: 0.12rem;
+}
+.home{
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    background-image: url(https://store-images.s-microsoft.com/image/apps.9130.13782514444884766.e6cdeefc-9ab1-49e3-872e-554ebc9e60a0.7684bfa3-ea97-4560-9aeb-dfe056181d2e?mode=scale&q=90&h=1080&w=1920);
+    background-size:cover ;
+    background-position: center;
+}
+.home .content{
+    max-width: 60rem;
+    
+}
+
+.home .content h3{
+    font-size: 6rem;
+}
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.6;
+    padding: 1rem;
+    color:white;
+}
+.about .row{
+    display: flex;
+    margin: 5rem;
+     }
+     .about .image{
+width: 50%;
+background-color: blue;
+     }
+     .about .content{
+        color:white;
+width: 50%;
+background-color:rgb(1,39,84);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding:10rem;
+font-size: 2rem;
+padding-top: 3rem;
+padding-bottom: 3rem;
+z-index:2 ;
+     }
+     section{
+        padding:2rem 7%;
+    }
+    .heading{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 3.5rem;
+    font-size: 3rem;
+    padding: 0.5rem 1rem;
+    transition: all 5s;
+    }
+    .heading:hover{
+        letter-spacing: 5rem;
+    }
+    .naruto .box{
+border: 2px solid black;
+padding: 5rem ;
+text-align: center;
+
+    }
+    .naruto .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+
+    }
+    .naruto .box-container .box .img{
+        height: 10rem;
+    }
+    
+    
+.icons .bars{
+background-color: black;
+height: 3rem;
+width: 1rem;
+          }        
+.about{
+background-color: black;
+
+  }
+  .naruto{
+      animation: appearEffect 5s;
+  } 
+             
+.naruto .box-container .box img{
+    height: 10rem;
+    
+}
+.naruto .box-container .box h3{
+    font-size: 2.5rem;
+    color: black;
+    padding: 1rem 0;
+}
+.naruto .box-container .box a{
+    color: white;
+    font-size: 1.5rem;
+    background-color: black;
+    padding: 1rem;
+    transition: all 1s;
+}
+.naruto .box-container .box a:hover{
+ letter-spacing: 0.2rem;
+ border-radius: 10%;
+}
+.about .content a{
+    color: black;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    transition: all 1s;
+    margin: 2rem;
+}
+.about .content a:hover{
+    letter-spacing: 0.2rem;
+    border-radius:10%;
+}
+#item1{
+    transform: scale(0);
+}
+#item2{
+    transform: scale(0);
+}
+#item3{
+    transform: scale(0);
+}
+#item4{
+    transform: scale(0);
+}
+#item5{
+    transform: scale(0);
+}
+#item6{
+    transform: scale(0);
+}
+.naruto .box:hover{
+    background-color: black;
+    color: white;
+}
+.weapons .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+}
+.weapons .box-container .box{
+    border: 2px solid black;
+    text-align: center;
+    padding: 2rem;
+}
+.weapons .box-container .box a{
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    color:black;                  
+}
+.weapons .box-container .box img{
+    height: 25rem;
+    width:25rem;
+}
+.weapons .box-container .box .content h3{
+    font-size: 2.5rem;
+    padding: 2.5rem;
+}
+.weapons .box-container .box .content p{
+    font-size: 1.5rem;
+}
+.weapons .heading{
+    color: black;
+    font-size: 3.5rem;
+}
+.fq .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+}
+.fq .box-container .box{
+    border: 2px solid white;
+    text-align: center;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+}
+.fq .box-container .box img{
+    height: 25rem;
+    width:25rem;
+}
+.fq .box-container .box h3{
+    padding: 2rem;
+    font-size: 2rem;
+}
+.fq .box-container .box p{
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.fq .heading{
+    color:black;
+    font-size: 3.5rem;
+}
+.movies .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+}
+.movies .box-container .box{
+    border: 2px solid black;
+    text-align: center;
+    padding: 2rem;
+}      
+
+.movies .box-container .box img{
+    height: 100%;
+    width:100%;
+}
+.movies .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 2.5rem;
+}
+.movies .box-container .box p{
+    font-size: 1.5rem;
+}
+.movies .heading{
+    color: black;
+    font-size: 3.5rem;
+}
+.contact .row{
+    display: flex;
+    background-color: black;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.contact .row .map{
+    flex:1 1 45rem;
+    width:100%;
+    object-fit:cover;
+
+}
+.contact .row form{
+    flex:1 1 45rem;
+    padding:5rem 3rem;
+    text-align: center;
+
+}
+.contact .row form h3{
+    color: #E3FDFD;
+    font-size: 3.5rem;
+    padding:2rem;
+}
+.contact .row form .inputbox{
+    margin: 2rem 0;
+    background-color: rgb(124, 116, 116);
+    display: flex;
+    align-items: center;
+    border:1px solid white;
+}
+.contact .row form .inputbox span{
+    color:white;
+    font-size: 2rem;
+    padding:2rem;
+    z-index: 2;
+}
+.contact .row form .inputbox input{
+   
+    color:black;
+    width:100%;
+    z-index: 1000;
+    background-color: rgb(124, 116, 116);
+    border: none;
+    
+}
+.contact .row form .inputbox input::placeholder{
+    color:black;
+}
+
+@keyframes appearEffect{
+    from{
+        translate: translateY(-110px);
+    }
+to{
+    translate: translateY(0px);
+
+}
+}
+@media all and (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding:1.5rem 2rem
+    }
+    section{
+        padding:2rem;
+    }
+    .about .row{
+        flex-direction: column;      
+    }
+    .row{
+        width: 100%;
+    }
+    .about{
+        width: 100%;
+    }
+    .row .c{
+        width:100%;
+        margin-left:-50px;
+    }
+    
+}
+@media all and (max-width:990px){
+ .header .navbar{
+     transform: scale(0);
+ }
+ .header .navbar a{
+     margin: 0rem;
+     font-size: 0px;
+ }
+ .contact .row .map{
+     width: 100%;
+ }
+}
